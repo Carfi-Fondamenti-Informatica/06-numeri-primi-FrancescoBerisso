@@ -1,14 +1,12 @@
 #include "lib.h"
-int funzione(int a, int i){
+bool n_primo(int a, int i){
     if(a % i == 0){
         if(a == i){
-            return 1;
+            return true;
         }
         else{
-            return 0;
+            return false;
         }
     }
-    else{
-        n_primo(a, i + 1);
-    }
+    n_primo(a, i + 1);
 }
