@@ -1,12 +1,14 @@
 #include "lib.h"
-bool n_primo(int a, int i){
+int n_primo(int a, int i){
     if(a % i == 0){
         if(a == i){
-            return true;
+            return 1;
         }
         else{
-            return false;
+            return 0;
         }
     }
-    n_primo(a, i + 1);
+    else{
+        n_primo(a, i + 1);
+    }
 }
