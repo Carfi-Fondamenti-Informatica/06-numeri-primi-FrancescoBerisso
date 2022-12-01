@@ -3,7 +3,7 @@
 int main(){
   int a = 0, i = 2;
   cin >> a;
-  if(n_primo(a, i)){
+  if(n_primo(a, i) == 1){
       cout << "numero primo";
   }
   else{
